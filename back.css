@@ -1,4 +1,4 @@
-/* General styles */
+/* general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
     background-color: #1b644f;
 }
 
-/* Header */
+/* header */
 #top-banner {
     background: #4CAF50;
     color: rgb(247, 245, 245);
@@ -23,7 +23,7 @@ body {
     color: #2c3e50;
 }
 
-/* Navigation */
+/* navigation */
 #navbar {
     background: #4CAF50;
     padding: 10px;
@@ -40,7 +40,7 @@ body {
     text-decoration: underline;
 }
 
-/* Content boxes */
+/* content box */
 .content-box {
     background: white;
     margin: 25px auto;
@@ -50,12 +50,11 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Lists */
 .list {
     margin-left: 20px;
 }
 
-/* Image */
+/* img */
 #main-image {
     width: 300px;
     display: block;
@@ -64,7 +63,7 @@ body {
     box-shadow: 0 0 10px gray;
 }
 
-/* Button */
+/* button */
 .btn {
     display: block;
     margin: 15px auto;
@@ -80,7 +79,7 @@ body {
     transition: 0.3s;
 }
 
-/* Table */
+/* table */
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
@@ -95,7 +94,7 @@ body {
     color: white;
 }
 
-/* Form */
+/* form */
 #user-form {
     text-align: center;
 }
@@ -116,7 +115,6 @@ body {
     background: #555;
 }
 
-/* Footer */
 #footer-container {
     background: #89938bed;
     color: white;
