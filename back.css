@@ -1,0 +1,125 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #82146e;
+    background-color: #1b644f;
+}
+
+/* Header */
+#top-banner {
+    background: #4CAF50;
+    color: rgb(247, 245, 245);
+    text-align: center;
+    padding: 20px;
+}
+.header-title {
+    margin: 0;
+    font-size: 2.5em;
+}
+.section-heading {
+    color: #2c3e50;
+}
+
+/* Navigation */
+#navbar {
+    background: #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+.nav-link {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+/* Content boxes */
+.content-box {
+    background: white;
+    margin: 25px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Lists */
+.list {
+    margin-left: 20px;
+}
+
+/* Image */
+#main-image {
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Button */
+.btn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #45a049;
+    transition: 0.3s;
+}
+
+/* Table */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.schedule-table th {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Form */
+#user-form {
+    text-align: center;
+}
+.form-input {
+    margin: 5px;
+    padding: 5px;
+}
+.submit-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background: #555;
+}
+
+/* Footer */
+#footer-container {
+    background: #89938bed;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

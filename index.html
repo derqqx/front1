@@ -1,88 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My first webpage &#128513;</title>
+    <title>My First Webpage 😃</title>
+    <link rel="stylesheet" href="back.css ">
 </head>
 <body>
-    <h1> Adilzhan Zhumash</h1>
-    <h2>WEB Technologies 1 (Front End)</h2>
-    <h3>About me: I was born in 2006, taking the bachelor degree and i'm enjoying reading Nesbe.</h3>
-    <p><q><i>My name is Adilzhan. I am 18 years old. Right now i am studying at Astana IT University</i></q></p>
+
+    <!-- headerr -->
+    <header id="top-banner">
+        <h1 class="header-title">Adilzhan Zhumash</h1>
+        <h2 class="section-heading">WEB Technologies 1 (Front End)</h2>
+        <h3>About me: I was born in 2006, taking the bachelor degree and i'm enjoying reading Nesbe.</h3>
+    </header>
     <hr>
-    <p> There are my 3 hobbies: </p><ol type="I"> 
-        <li>playing football</li>
-        <li>talking with my family</li>
-        <li>reading books</li></ol>
-    <p>Sites that I use a lot:</p><ul>
-        <li>liveball - to watch sports</li>
-        <li>youtube - to watch some video when im bored</li>
-        <li>anilibria - to watch anime</li></ul>
-    <p>My favorite websites links: </p><a href="https://k358.liveball.st/">football</a> and
-    <a href="https://sopranos-hdrezka.net/80-goblin/2-season">series</a>.
-    <p></p>
-    <img src="me.png" width="500" height="320" alt="me">
-    <center><button>Click Me</button> </center>
+
+    <!-- navigation -->
+    <nav id="navbar">
+        <a class="nav-link" href="#about">About Me</a>
+        <a class="nav-link" href="#hobbies">Hobbies</a>
+        <a class="nav-link" href="#schedule">Schedule</a>
+        <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="content-box">
+        <h3 class="section-heading">About Me</h3>
+        <p class="paragraph-text">
+            <q><i>My name is Adilzhan. I am 18 years old. Right now I am studying at Astana IT University.</i></q>
+        </p>
+    </section>
+
+    <section id="hobbies" class="content-box">
+        <h3 class="section-heading">My Hobbies</h3>
+        <ol class="list">
+            <li>Playing football</li>
+            <li>Talking with my family</li>
+            <li>Reading books</li>
+        </ol>
+    </section>
+
+    <!--sites-->
+    <section class="content-box">
+        <h3 class="section-heading">Favorite Websites</h3>
+        <ul class="list">
+            <li>Liveball – to watch sports</li>
+            <li>YouTube – for videos</li>
+            <li>Anilibria – to watch anime</li>
+        </ul>
+        <p>My favorite links:
+            <a href="https://k358.liveball.st/">Football</a> |
+            <a href="https://sopranos-hdrezka.net/80-goblin/2-season">Series</a>
+        </p>
+    </section>
+
+    <!--img-->
+    <section class="content-box">
+        <h3 class="section-heading">My Photo</h3>
+        <img id="main-image" src="me.png" alt="Me">
+        <button class="btn">Click Me</button>
+    </section>
+
+    <!--schedul-->
+    <section id="schedule" class="content-box">
+        <h3 class="section-heading">My Schedule</h3>
+        <table class="schedule-table">
+            <tr><th>Subject</th><th>Day</th><th>Time</th></tr>
+            <tr><td>WEB Technologies 1</td><td>Monday</td><td>7–8 PM</td></tr>
+            <tr><td>Russian Language 1</td><td>Monday</td><td>8–10 PM</td></tr>
+            <tr><td>Russian Language 1</td><td>Tuesday</td><td>4–6 PM</td></tr>
+        </table>
+    </section>
+
+    <!--emoji-->
+    <section class="content-box">
+        <p>
+            I'm in a neutral mood today 😅.  
+            I overslept my alarm clock 🥱.  
+            Everything is fine at the university, I met a lot of friends 😁.  
+            The day was quite productive 😃.  
+        </p>
+    </section>
+
+    <!-- form -->
+    <section id="contact" class="content-box">
+        <h3 class="section-heading">Contact Me</h3>
+        <form id="user-form">
+            <label>Name: <input class="form-input" type="text" placeholder="Your name"></label><br>
+            <label>Email: <input class="form-input" type="email" placeholder="you@mail.com"></label><br>
+            <label>Favorite color: <input class="form-input" type="color"></label><br>
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="submit-btn">Reset</button>
+        </form>
+    </section>
     <hr>
-    <h3><b>My schedule:</b></h3>
-     <table border="1" cellpadding="6">
-        <thead>
-            <tr>
-                <th>Subject</th>
-                <th>Day</th>
-                <th>Time</th>
-            </tr>
-        </thead>
-         <tbody>
-            <tr>
-                <td>WEB Technologies 1</td>
-                <td>Monday</td>
-                <td>7 - 8 PM</td>
-            </tr>
-            <tr>
-                <td>Russian Language 1</td>
-                <td>Monday</td>
-                <td>8 - 10 PM</td>
-            </tr>
-            <tr>
-                <td>Russian Language 1</td>
-                <td>Tuesday</td>
-                <td>4 - 6 PM</td>
-            </tr>
-         </tbody>
-     </table>
-     <p></p>
-     <table border="6" cellspacing="0" cellpadding="12">
-        <!--left column-->
-        <tr>
-                <td align="center">Menu
-                <ul> 
-                    <li>About me</li>
-                    <li>Hobby</li>
-                    <li>Schedule</li>
-                </ul>
-                </td>
-            <td><i><p>This is the area, 
-                where i can write content and 
-                everything else i need</p></i></td>
-        </tr>
-     </table>
-     <hr>
-    <p>I'm in a neutral mood today. 
-    But the sad thing is that I overslept my alarm clock&#128517;. 
-    Everything is fine at the university, I met a lot of my friends&#128513;. 
-    And the day could be said to have been productive&#128516;.</p>
-    <p></p>
-    <center><form action="">
-        <label for="name"> Name: </label>
-        <input type="text" id="name" name="name" placeholder=" Your name"><br>
-        <label for="email"> Email:</label>
-        <input type="email" id="email" name="email" placeholder="...@mail.com"><br>
-        <label for="color"> Fav. color:</label>
-        <input type="color" id="color" name="color" placeholder=" Your fav. color"><br>
-        <input type="submit" value="Submit">
-        <input type="reset" value=" Reset all">
-    </form></center>
-    <center><h1>Thank you for visiting!</h1></center>
+    <footer id="footer-container">
+        <h2>Thank you for visiting!</h2>
+    </footer>
 </body>
 </html>
