@@ -1,6 +1,6 @@
 /* general */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     background: #f7f7f7;
@@ -46,8 +46,7 @@ body {
     margin: 25px auto;
     padding: 20px;
     width: 80%;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
 }
 
 .list {
@@ -60,7 +59,6 @@ body {
     display: block;
     margin: 10px auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px gray;
 }
 
 /* button */
@@ -82,7 +80,6 @@ body {
 /* table */
 .schedule-table {
     width: 100%;
-    border-collapse: collapse;
 }
 .schedule-table th, .schedule-table td {
     border: 1px solid #ccc;
