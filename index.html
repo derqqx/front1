@@ -1,100 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage 😃</title>
-    <link rel="stylesheet" href="back.css ">
+  <meta charset="UTF-8">
+  <title>58</title>
+  <link rel="stylesheet" href="back.css">
 </head>
 <body>
 
-    <!-- headerr -->
-    <header id="top-banner">
-        <h1 class="header-title">Adilzhan Zhumash</h1>
-        <h2 class="section-heading">WEB Technologies 1 (Front End)</h2>
-        <h3>About me: I was born in 2006, taking the bachelor degree and i'm enjoying reading Nesbe.</h3>
-    </header>
-    <hr>
-
-    <!-- navigation -->
-    <nav id="navbar">
-        <a class="nav-link" href="#about">About Me</a>
-        <a class="nav-link" href="#hobbies">Hobbies</a>
-        <a class="nav-link" href="#schedule">Schedule</a>
-        <a class="nav-link" href="#contact">Contact</a>
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="logo">58</div>
+    <nav class="navbar">
+      <a href="#welcome">Welcome page</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <section id="about" class="content-box">
-        <h3 class="section-heading">About Me</h3>
-        <p class="paragraph-text">
-            <q><i>My name is Adilzhan. I am 18 years old. Right now I am studying at Astana IT University.</i></q>
-        </p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="welcome">
+    <h1>WELCOME! 👋</h1>
+    <p>My name is Adilzhan. I am 18 years old. Right now I am studying at Astana IT University.</p>
+  </section>
 
-    <section id="hobbies" class="content-box">
-        <h3 class="section-heading">My Hobbies</h3>
-        <ol class="list">
-            <li>Playing football</li>
-            <li>Talking with my family</li>
-            <li>Reading books</li>
-        </ol>
-    </section>
+  <!-- Card Row (Flexbox) -->
+  <section class="cards" id="hobbies">
+    <div class="card">
+      <img src="soprano.jpg" alt="Sopranos">
+      <h3>The Sopranos Series</h3>
+      <p>North Jersey mafia boss Tony Soprano effectively solves the problems of the "family".
+         But the situation with their own relatives is more complicated: the children have strayed from their hands,
+          the marriage is under threat, and there is a complete misunderstanding in the relationship with the elderly mother.
+           After a series of panic attacks, he decides to secretly visit a therapist..</p>
+      <button>Read more</button>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfhTkFPu7RGzomkrbQDcBFUKJWp9l8TREyA&s" alt="Family">
+      <h3>Family</h3>
+      <p>Spending time with my family gives me strength.</p>
+      <button>Read more</button>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81gR12xXI0L._UF1000,1000_QL80_.jpg" alt="Nesbø books">
+      <h3>Books</h3>
+      <p>The best books imo.</p>
+      <button>Read more</button>
+    </div>
+  </section>
 
-    <!--sites-->
-    <section class="content-box">
-        <h3 class="section-heading">Favorite Websites</h3>
-        <ul class="list">
-            <li>Liveball – to watch sports</li>
-            <li>YouTube – for videos</li>
-            <li>Anilibria – to watch anime</li>
-        </ul>
-        <p>My favorite links:
-            <a href="https://k358.liveball.st/">Football</a> |
-            <a href="https://sopranos-hdrezka.net/80-goblin/2-season">Series</a>
-        </p>
-    </section>
+  <!-- Grid Layout -->
+  <section class="grid-layout" id="schedule">
+    <header class="grid-header">Page Header</header>
+    <aside class="grid-sidebar">Lorem ipsum dolhic. Laboriosam, illo quod?</aside>
+    <main class="grid-main">
+      <h2>Schedule</h2>
+      <table class="schedule-table">
+        <tr><th>Subject</th><th>Day</th><th>Time</th></tr>
+        <tr><td>WEB Technologies 1</td><td>Monday</td><td>7–8 PM</td></tr>
+        <tr><td>Russian Language 1</td><td>Monday</td><td>8–10 PM</td></tr>
+        <tr><td>Russian Language 1</td><td>Tuesday</td><td>4–6 PM</td></tr>
+      </table>
+    </main>
+    <footer class="grid-footer">Grid Footer</footer>
+  </section>
 
-    <!--img-->
-    <section class="content-box">
-        <h3 class="section-heading">My Photo</h3>
-        <img id="main-image" src="me.png" alt="Me">
-        <button class="btn">Click Me</button>
-    </section>
+  <!-- Image Gallery -->
+  <section id="gallery" class="gallery">
+    <img src="me.png" alt="me">
+    <img src="58.jpg" alt="58">
+    <img src="soprano.jpg" alt="series">
+    <img src="dream.png" alt="car">
+    <img src="mike.jpg" alt="mike erm">
+    <img src="cake.jpg" alt="b cake">
+    <img src="3.jpg" alt="3">
+    <img src="cat.jpg" alt="orange cat">
+    <img src="random.jpg" alt="random">
+  </section>
+<hr>
 
-    <!--schedul-->
-    <section id="schedule" class="content-box">
-        <h3 class="section-heading">My Schedule</h3>
-        <table class="schedule-table">
-            <tr><th>Subject</th><th>Day</th><th>Time</th></tr>
-            <tr><td>WEB Technologies 1</td><td>Monday</td><td>7–8 PM</td></tr>
-            <tr><td>Russian Language 1</td><td>Monday</td><td>8–10 PM</td></tr>
-            <tr><td>Russian Language 1</td><td>Tuesday</td><td>4–6 PM</td></tr>
-        </table>
-    </section>
+  <!-- Form -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <form id="user-form">
+    <label> Name: <input type="text" class="form-input" placeholder="Your name"></label><br>
+    <label> Email: <input type="email" class="form-input" placeholder="you@mail.com"></label><br>
+    <label> Message: <textarea class="form-input" placeholder="Your message"></textarea></label><br>
+    <button type="submit" class="btn">Submit</button>
+    <button type="reset" class="btn">Reset</button>
+  </form>
+</section>
 
-    <!--emoji-->
-    <section class="content-box">
-        <p>
-            I'm in a neutral mood today 😅.  
-            I overslept my alarm clock 🥱.  
-            Everything is fine at the university, I met a lot of friends 😁.  
-            The day was quite productive 😃.  
-        </p>
-    </section>
 
-    <!-- form -->
-    <section id="contact" class="content-box">
-        <h3 class="section-heading">Contact Me</h3>
-        <form id="user-form">
-            <label>Name: <input class="form-input" type="text" placeholder="Your name"></label><br>
-            <label>Email: <input class="form-input" type="email" placeholder="you@mail.com"></label><br>
-            <label>Favorite color: <input class="form-input" type="color"></label><br>
-            <button type="submit" class="submit-btn">Submit</button>
-            <button type="reset" class="submit-btn">Reset</button>
-        </form>
-    </section>
-    <hr>
-    <footer id="footer-container">
-        <h2>Thank you for visiting!</h2>
-    </footer>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Adilzhan Zhumash. All rights reserved.</p>
+  </footer>
 </body>
 </html>
