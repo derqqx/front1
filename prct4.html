@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>der</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">58</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#welcome">Welcome</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mq-boxes">Responsive Boxes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Welcome ===== -->
+  <header id="welcome" class="hero text-center text-white">
+    <div class="container py-5">
+      <h1 class="display-4">Welcome! 👋</h1>
+      <p class="lead">I am Adilzhan — student at Astana IT University. This page demonstrates responsive CSS + Bootstrap grid.</p>
+    </div>
+  </header>
+
+  <!-- ===== Part 1: Media Queries ===== -->
+  <main class="container my-5">
+
+    <!-- Task 0: Responsive Typography -->
+    <section id="mq-typography" class="mb-5">
+      <h2 class="section-title">Responsive Typography</h2>
+      <p class="mq-text">
+        This paragraph changes size depending on screen width. Resize the browser to see font size change
+        (mobile < 600px, tablet 600–1024px, desktop > 1024px).
+      </p>
+    </section>
+
+    <!-- Task 1: Responsive Layout with Media Queries -->
+    <section id="mq-boxes" class="mb-5">
+      <h2 class="section-title">Responsive Boxes</h2>
+      <div class="mq-row">
+        <div class="mq-box">Box 1<br><small>content</small></div>
+        <div class="mq-box">Box 2<br><small>content</small></div>
+        <div class="mq-box">Box 3<br><small>content</small></div>
+      </div>
+      <p class="small mt-2 text-muted">Desktop: 3 in a row | Tablet: 2 per row | Mobile: stacked</p>
+    </section>
+
+    <!-- ===== Hobbies Cards ===== -->
+    <section id="hobbies" class="mb-5">
+      <h2 class="section-title">My Hobbies</h2>
+      <div class="d-flex flex-wrap gap-3 hobby-cards">
+        <div class="card hobby-card">
+          <img src="soprano.jpg" class="card-img-top" alt="Sopranos">
+          <div class="card-body">
+            <h5 class="card-title">The Sopranos</h5>
+            <p class="card-text">Crime drama I like to watch.</p>
+            <a href="#" class="btn btn-sm btn-success">Read more</a>
+          </div>
+        </div>
+
+        <div class="card hobby-card">
+          <img src="family.jpeg" class="card-img-top" alt="Family">
+          <div class="card-body">
+            <h5 class="card-title">Family</h5>
+            <p class="card-text">Spending time with family gives me strength.</p>
+            <a href="#" class="btn btn-sm btn-success">Read more</a>
+          </div>
+        </div>
+
+        <div class="card hobby-card">
+          <img src="books.webp" class="card-img-top" alt="Books">
+          <div class="card-body">
+            <h5 class="card-title">Books</h5>
+            <p class="card-text">I enjoy reading Jo Nesbø and other thrillers.</p>
+            <a href="#" class="btn btn-sm btn-success">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Portfolio Projects (Bootstrap grid) ===== -->
+    <section id="portfolio" class="mb-5">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card project-card h-100 d-flex flex-column">
+            <img src="https://alienschooler.com/wp-content/uploads/2022/08/number-1-outline.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">Short description of project one.</p>
+              <div class="mt-auto"><a class="btn btn-primary btn-sm" href="#">View</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card project-card h-100 d-flex flex-column">
+            <img src="https://www.printableparadise.com/numbers/printable-number-2-outline.png" class="card-img-top" alt="Project 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text">Short description of project two.</p>
+              <div class="mt-auto"><a class="btn btn-primary btn-sm" href="#">View</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card project-card h-100 d-flex flex-column">
+            <img src="https://alienschooler.com/wp-content/uploads/2022/08/number-3-outline-464x600.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text">Short description of project three.</p>
+              <div class="mt-auto"><a class="btn btn-primary btn-sm" href="#">View</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Portfolio with Sidebar ===== -->
+    <section id="projects-with-sidebar" class="mb-5">
+      <div class="row">
+        <div class="col-12 col-lg-8 main-projects">
+          <h3>My Projects</h3>
+          <p>
+            Soon there will be my projects. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Corporis hic aspernatur, deserunt distinctio dolorem placeat. 
+            Reprehenderit necessitatibus culpa autem hic, repudiandae atque illo voluptatem quos aut tenetur.
+          </p>
+        </div>
+        <aside class="col-12 col-lg-4 sidebar">
+          <div class="sidebar-box p-3">
+            <h4>About me</h4>
+            <p>Adilzhan, student at Astana IT University.</p>
+            <p><strong>Skills:</strong> HTML, CSS</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section id="gallery" class="mb-5">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <img src="me.png" alt="me">
+        <img src="58.jpg" alt="58">
+        <img src="soprano.jpg" alt="series">
+        <img src="dream.png" alt="car">
+        <img src="mike.jpg" alt="mike">
+        <img src="cake.jpg" alt="cake">
+        <img src="3.jpg" alt="3">
+        <img src="cat.jpg" alt="cat">
+        <img src="random.jpg" alt="random">
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="mb-5">
+      <center><h2 class="section-title">Contact</h2></center>
+      <form class="mx-auto" style="max-width:480px;">
+        <label class="form-label">Name <input class="form-input" type="text" placeholder="Your name"></label>
+        <label class="form-label">Email <input class="form-input" type="email" placeholder="you@mail.com"></label>
+        <label class="form-label">Message <textarea class="form-input" rows="4" placeholder="Your message..."></textarea>
+        <div class="mt-3">
+          <button class="btn btn-success me-2" type="submit">Submit</button>
+          <button class="btn btn-secondary" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">© 2025 Adilzhan Zhumash.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
