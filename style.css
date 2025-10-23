@@ -1,0 +1,78 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #1b644f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+button:hover {
+  background: #3e8e41;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  background: #e8f5e9;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+#colorBox {
+  background: #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+#hoverBox {
+  background: #ccc;
+  height: 100px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 100px;
+}
+
+#errorMessage {
+  color: red;
+}

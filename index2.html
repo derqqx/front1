@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>JavaScript Practice Page</h1>
+    <p>Adilzhan Zhumash – Group SE-2422</p>
+  </header>
+
+  <section>
+    <h2>First Script</h2>
+    <p>Check the console to see my name and group printed, and a welcome alert.</p>
+  </section>
+
+  <section>
+    <h2>Variables and Operators</h2>
+    <p>Open the console to see examples of variables, math operations, and string concatenation.</p>
+  </section>
+
+  <section>
+    <h2>Change Text Example</h2>
+    <p id="text-change">This text will change when you click the button below.</p>
+    <button onclick="changeText()">Change Text</button>
+  </section>
+
+  <section>
+    <h2>Change Style Example</h2>
+    <div id="colorBox">
+      Click the buttons to change my style!
+    </div>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="changeFontSize()">Change Font Size</button>
+  </section>
+
+  <section>
+    <h2>Add and Remove List Items</h2>
+    <ul id="itemList">
+      <li>Example item</li>
+    </ul>
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Item</button>
+  </section>
+
+  <section>
+    <h2>Mouse Events</h2>
+    <div id="hoverBox">Hover over me!</div>
+  </section>
+
+  <section>
+    <h2>Keyboard Input</h2>
+    <input type="text" id="liveInput" placeholder="Type something...">
+    <p>Current value: <span id="displayText"></span></p>
+  </section>
+
+  <section>
+    <h2>Form Validation</h2>
+    <form id="loginForm">
+      <label>Name:</label> <input type="text" id="nameField">
+      <label>Email:</label> <input type="email" id="emailField">
+      <label>Password:</label> <input type="password" id="passwordField">
+      <button type="submit">Submit</button>
+    </form>
+    <p id="errorMessage"></p>
+  </section>
+
+  <section>
+    <h2>Mini Project: To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
