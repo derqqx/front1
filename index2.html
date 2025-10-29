@@ -2,77 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JavaScript Practice</title>
+  <title>58</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>JavaScript Practice Page</h1>
-    <p>Adilzhan Zhumash – Group SE-2422</p>
-  </header>
-
+  <!-- Task 1: Selectors & CSS -->
   <section>
-    <h2>First Script</h2>
-    <p>Check the console to see my name and group printed, and a welcome alert.</p>
+    <h2 id="titleText">this is a title!</h2>
+    <p class="description">this text will change.</p>
+    <button id="changeTextBtn">change text & style</button>
   </section>
+  <hr>
 
+  <!-- Task 2: Hide / Show -->
   <section>
-    <h2>Variables and Operators</h2>
-    <p>Open the console to see examples of variables, math operations, and string concatenation.</p>
+    <h2>Hide and Show Paragraph</h2>
+    <p id="paragraph">magic paragraph</p>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">Toggle</button>
   </section>
+  <hr>
 
+  <!-- Task 3: Fade -->
   <section>
-    <h2>Change Text Example</h2>
-    <p id="text-change">This text will change when you click the button below.</p>
-    <button onclick="changeText()">Change Text</button>
+    <h2>Fade Image</h2>
+    <img id="fadeImage" src="soprano.jpg" alt="Sopranos">
+    <br>
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="fadeToggleBtn">Fade Toggle</button>
   </section>
+  <hr>
 
+  <!-- Task 4: Slide -->
   <section>
-    <h2>Change Style Example</h2>
-    <div id="colorBox">
-      Click the buttons to change my style!
+    <h2>Slide Panel</h2>
+    <button id="slideToggleBtn">Show/Hide Panel</button>
+    <div id="panel" style="display:none; background:#d3e6d3; padding:10px; margin-top:5px;">
+      This is a sliding panel
     </div>
-    <button onclick="changeColor()">Change Color</button>
-    <button onclick="changeFontSize()">Change Font Size</button>
   </section>
+  <hr>
 
+  <!-- Task 5: Add / Remove Elements -->
   <section>
-    <h2>Add and Remove List Items</h2>
-    <ul id="itemList">
-      <li>Example item</li>
+    <h2>Manage List Items</h2>
+    <ul id="myList">
+      <li>First item</li>
     </ul>
-    <button onclick="addItem()">Add Item</button>
-    <button onclick="removeItem()">Remove Item</button>
+    <button id="addItem">Add Item</button>
+    <button id="removeItem">Remove Item</button>
   </section>
+  <hr>
 
+  <!-- Task 6: Modify Attributes -->
   <section>
-    <h2>Mouse Events</h2>
-    <div id="hoverBox">Hover over me!</div>
+    <h2>Change Image & Link</h2>
+    <img id="changePic" src="punisher.jpg" alt="castle">
+    <button id="changeImage">Change Image</button>
+    <br><br>
+    <a id="myLink" href="https://sopranos-hdrezka.net/80-goblin/2-season" target="_blank">Go to Sopranos</a>
+    <button id="changeLink">Change Link</button>
   </section>
+  <hr>
 
+  <!-- Task 7: Form Interaction -->
   <section>
-    <h2>Keyboard Input</h2>
-    <input type="text" id="liveInput" placeholder="Type something...">
-    <p>Current value: <span id="displayText"></span></p>
+    <h2>Live Form Input</h2>
+    <label>Name: <input type="text" id="nameInput"></label>
+    <label>Email: <input type="email" id="emailInput"></label>
+    <p>Live Preview:</p>
+    <p id="liveOutput"></p>
   </section>
+  <hr>
 
+  <!-- Task 8–10: Animation -->
   <section>
-    <h2>Form Validation</h2>
-    <form id="loginForm">
-      <label>Name:</label> <input type="text" id="nameField">
-      <label>Email:</label> <input type="email" id="emailField">
-      <label>Password:</label> <input type="password" id="passwordField">
-      <button type="submit">Submit</button>
-    </form>
-    <p id="errorMessage"></p>
+    <h2>Box Animation</h2>
+    <div id="box"></div>
+    <button id="animateBtn">Animate Box</button>
+    <button id="sequenceBtn">Sequential Animation</button>
   </section>
+  <hr>
 
+  <!-- Task 11: Mini Project -->
   <section>
-    <h2>Mini Project: To-Do List</h2>
-    <input type="text" id="taskInput" placeholder="Enter a task">
-    <button onclick="addTask()">Add Task</button>
-    <ul id="taskList"></ul>
+    <h2>Mini Project: Accordion Menu</h2>
+    <div class="accordion">
+      <h3 class="accordion-header">Section 1</h3>
+      <div class="accordion-content">section 1</div>
+
+      <h3 class="accordion-header">Section 2</h3>
+      <div class="accordion-content">section 2</div>
+
+      <h3 class="accordion-header">Section 3</h3>
+      <div class="accordion-content">section 3</div>
+    </div>
   </section>
 
   <script src="script.js"></script>
